@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---- Website Information ---->
+    <title>Federal Multiverse</title>
+    <meta name="description" content="Federal Multiverse" />
+
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/code.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newstyles.css" />
+  </head>
+
+  <body class="@@dashboard">
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div class="header landing">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar">
+              <div class="brand-logo">
+                <a href="./index.html"
+                  ><img src="./images/logo.png" alt=""
+                /></a>
+              </div>
+              <div class="header-right">
+                <div
+                  class="dark-light-toggle theme-switch"
+                  onclick="themeToggle()"
+                >
+                  <span class="dark"><i class="ri-moon-line"></i></span>
+                  <span class="light"><i class="ri-sun-line"></i></span>
+                </div>
+
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro section-padding" id="intro">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-6 col-md-6 py-md-5">
+            <div class="intro-content my-5 text-center">
+              <h1>ENFTX - NFT Dashboard HTML Template</h1>
+              <p>
+                ENFTX is the complete UX &amp; UI dashboard for NFT. Here
+                included bids, collection, wallet, and all user setting pages
+                including profile, application, activity, payment method, api,
+                sign in &amp; sign up etc.
+              </p>
+            </div>
+            <div class="intro-demo_img">
+              <img src="./images/demo/dashboard.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="demo section-padding">
+      <div class="container">
+        <div class="row py-lg-5 justify-content-center">
+          <div class="col-xl-7">
+            <div class="section-title text-center">
+              <h2>Pages</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./index.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/dashboard.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Dashboard</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./bids.html" target="_blank">
+                <div class="img-wrap">
+                  <img src="./images/demo/bids.jpg" alt="" class="img-fluid" />
+                </div>
+              </a>
+              <h4>Bids</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./saved.html" target="_blank">
+                <div class="img-wrap">
+                  <img src="./images/demo/saved.jpg" alt="" class="img-fluid" />
+                </div>
+              </a>
+              <h4>Saved</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./collection.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/collections.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Collections</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./wallet.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/wallet.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Wallet</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./profile.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/profile.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>User Profile</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-profile.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-profile.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Profile Settings</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-application.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-application.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Application</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-security.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-security.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Security</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-activity.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-activity.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Activity</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-payment-method.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-payment-method.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Payment Method</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./settings-api.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/settings-api.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Api</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./index.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/signin.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Sign in Page</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./signup.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/signup.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Sign up page</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./lock.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/locked.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Locked Page</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./otp1.html" target="_blank">
+                <div class="img-wrap">
+                  <img src="./images/demo/otp-1.jpg" alt="" class="img-fluid" />
+                </div>
+              </a>
+              <h4>1 of 2-Step-Verification</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./otp2.html" target="_blank">
+                <div class="img-wrap">
+                  <img src="./images/demo/otp-2.jpg" alt="" class="img-fluid" />
+                </div>
+              </a>
+              <h4>2 of 2-Step-Verification</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./verify-email.html" target="_blank">
+                <div class="img-wrap">
+                  <img
+                    src="./images/demo/email-verification.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </a>
+              <h4>Email Verification</h4>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6">
+            <div class="demo_img">
+              <a href="./reset.html" target="_blank">
+                <div class="img-wrap">
+                  <img src="./images/demo/reset.jpg" alt="" class="img-fluid" />
+                </div>
+              </a>
+              <h4>Reset Page</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features section-padding" data-scroll-index="2">
+      <div class="container">
+        <div class="row py-lg-5 justify-content-center">
+          <div class="col-xl-7">
+            <div class="section-title text-center">
+              <span>Problem?</span>
+              <h2>Don't Worry, I am waiting your question</h2>
+              <p>Refreshing my inbox, waiting for your mail</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="customer-support-content">
+              <span><i class="fab fa-whatsapp"></i></span>
+              <h4>+8801843666660</h4>
+              <p>
+                Without sleeping time, I am avaiable in Whstsapp. I recommend
+                Whstsapp
+              </p>
+              <a href="https://api.whatsapp.com/send?phone=008801843666660"
+                >Send Message <i class="la la-angle-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="customer-support-content">
+              <span><i class="fab fa-skype"></i></span>
+              <h4>sporsho9</h4>
+              <p>
+                Without sleeping time, I am avaiable in skype. I also recommend
+                Skype
+              </p>
+              <a href="skype:profile_name?sporsho9"
+                >Add Skype <i class="la la-angle-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="customer-support-content">
+              <span><i class="fas fa-envelope"></i></span>
+              <h4>praveen@gmail.com</h4>
+              <p>
+                When you send me email, I get notification, and quickly reply
+                you
+              </p>
+              <a href="mailto:praveen@gmail.com"
+                >Send Email <i class="la la-angle-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="customer-support-content">
+              <span><i class="fas fa-headset"></i></span>
+              <h4>Pre sale question</h4>
+              <p>
+                You have need more design or customization? Dont worry about
+                Quality
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/1KjSr2pRP9GSydodBYOz05ke6faVX0MgFCAznaYdKl6E"
+                >Hire Now <i class="la la-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

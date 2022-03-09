@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---- Website Information ---->
+    <title>Federal Multiverse</title>
+    <meta name="description" content="Federal Multiverse" />
+
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/code.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newstyles.css" />
+  </head>
+
+  <body class="@@dashboard">
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div id="main-wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="header-content">
+                <div class="header-left">
+                  <h2 class="mb-0">Federal Multiverse</h2>
+                  <div class="brand-logo">
+                    <a class="mini-logo" href="./"
+                      ><img src="./images/logoi.png" alt="" width="40"
+                    /></a>
+                  </div>
+                </div>
+                <div class="header-right">
+                  <!-- <div class="theme-switch"><i class="ri-sun-line"></i></div> -->
+                  <div class="search mr-4">
+                    <form action="#">
+                      <span><i class="ri-search-line"></i></span
+                      ><input type="text" placeholder="Search Here" />
+                    </form>
+                  </div>
+                  <h6 class="mr-1rem light-color">Hi, Praveen</h6>
+                  <div class="dropdown profile_log dropdown">
+                    <div
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      class=""
+                      aria-expanded="false"
+                    >
+                      <div class="user icon-menu active">
+                        <span
+                          ><img
+                            src="https://img.icons8.com/bubbles/50/000000/user.png"
+                        /></span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="-1"
+                      role="menu"
+                      aria-hidden="true"
+                      class="dropdown-menu dropdown-menu-right"
+                    >
+                      <div class="user-email">
+                        <div class="user">
+                          <span class="thumb">
+                            <img src="./images/profile/3.png" alt="" />
+                          </span>
+                          <div class="user-info">
+                            <h5>Praveen Thakur</h5>
+                            <span>praveen@gmail.com</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="dropdown-item" href="./profile.html">
+                        <span><i class="ri-user-line"></i></span>Profile
+                      </a>
+                      <a class="dropdown-item" href="./wallet.html">
+                        <span><i class="ri-wallet-line"></i></span>Wallet
+                      </a>
+                      <a class="dropdown-item" href="./settings-profile.html">
+                        <span><i class="ri-settings-3-line"></i></span>Settings
+                      </a>
+                      <a class="dropdown-item" href="./settings-activity.html">
+                        <span><i class="ri-time-line"></i></span>Activity
+                      </a>
+                      <a class="dropdown-item" href="./lock.html">
+                        <span><i class="ri-lock-line"></i></span>Lock
+                      </a>
+                      <a class="dropdown-item logout" href="./index.html">
+                        <i class="ri-logout-circle-line"></i>Logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="brand-logo">
+          <a class="full-logo" href="./"
+            ><img src="./images/logo-icon.png" alt="" width="40"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./dashboard.html">
+                <span><i class="ri-layout-grid-fill"></i></span>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./collection.html">
+                <span><i class="ri-star-line"></i></span>
+                <span class="nav-text">My Collections</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./createNFT.html">
+                <span><i class="ri-add-box-line"></i></span>
+
+                <span class="nav-text">Create NFT</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./marketplace.html">
+                <span><i class="ri-heart-line"></i></span>
+                <span class="nav-text">Marketplace</span></a
+              >
+            </li>
+
+            <li class="">
+              <a href="./profile.html">
+                <span><i class="ri-account-box-line"></i></span>
+                <span class="nav-text">Profile</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./settings-profile.html">
+                <span><i class="ri-settings-3-line"></i></span>
+                <span class="nav-text">Settings</span></a
+              >
+            </li>
+            <li class="logout">
+              <a href="./index.html">
+                <span><i class="ri-logout-circle-line"></i></span>
+                <span class="nav-text">Signout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-body">
+        <div class="container">
+          <div class="page-title">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <div class="page-title-content">
+                  <h3>Marketplace</h3>
+                  <!-- <p class="mb-2">Welcome Federal Multiverse</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card filter-tab">
+              <div
+                class="card-header card-design-mobile"
+                style="padding-top: 0"
+              >
+                <div class="create-own">
+                  <a href="createNFT.html" class="btn btn-primary"
+                    >Create your Own NFT ?</a
+                  >
+                </div>
+
+                <div class="filter-nav">
+                  <a class="active">All</a>
+                  <a>Art</a>
+                  <a>Music</a>
+                  <a>Real World</a>
+                </div>
+
+                <div class="filter width-large">
+                  <select name="filter" id="filter" class="form-select">
+                    <option value="Filter">Filter</option>
+                    <option value="Filter">All</option>
+                    <option value="Filter">Art</option>
+                  </select>
+                </div>
+
+                <div class="search width350px">
+                  <form action="#">
+                    <span><i class="ri-search-line"></i></span
+                    ><input type="text" placeholder="Search Here" />
+                  </form>
+                </div>
+              </div>
+              <div class="card-body bs-0 p-0 bg-transparent">
+                <div class="row">
+                  <!-- SMALL LEFT SIDE CARD -->
+                  <div class="col-md-9">
+                    <div class="">
+                      <div class="g-grid margin-child col-md-12">
+                        <!-- ONE CARD HAZY-->
+                        <a href="hazy.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/hazy.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="">
+                                    <strong>Hazy colors</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.25 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="marketplacedetail.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/abstractor.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="">
+                                    <strong>Abstractor</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.35 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="darkvision.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/darkvision.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="2">
+                                    <strong>Dark Vision</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.75 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="gamechanger.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/gamechanger.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="mb">
+                                    <strong>Game Changer</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.25 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD HAZY-->
+                        <a href="hazy.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/hazy.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="">
+                                    <strong>Hazy colors</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.25 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="marketplacedetail.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/abstractor.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="">
+                                    <strong>Abstractor</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.35 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="darkvision.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/darkvision.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="2">
+                                    <strong>Dark Vision</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.75 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                        <!-- ONE CARD -->
+                        <a href="gamechanger.html" class="">
+                          <div class="card items">
+                            <div class="card-body">
+                              <div class="items-img position-relative">
+                                <img
+                                  src="./images/nft/gamechanger.png"
+                                  class="img-fluid rounded mb-3"
+                                  alt=""
+                                />
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                  <p class="mb">
+                                    <strong>Game Changer</strong>
+                                  </p>
+                                </div>
+                                <div class="text-end">
+                                  <h5 class="text-muted">
+                                    <small>0.25 ETH</small>
+                                  </h5>
+                                </div>
+                              </div>
+                              <!-- <div class="d-flex justify-content-center mt-3">
+                          <a href="" class="btn btn-primary">Place a Bid</a>
+                        </div> -->
+                            </div>
+                          </div>
+                        </a>
+                        <!-- ONE CARD END -->
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <!--  RECENTLY ADDED TABLE -->
+                    <div class="card white-bg-stat mt-2m">
+                      <div class="card-header">
+                        <h4 class="card-title">Recently Added</h4>
+                      </div>
+                      <div class="card-body bs-0 mt-n4 nft-mint">
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/eth.svg" alt="" class="eth"> -->
+                            <h4>Hazy Colors</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">Praveen</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/sol.svg" alt="" class="eth"> -->
+                            <h4>Abstractor</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">Prernaa</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/avax.svg" alt="" class="eth"> -->
+                            <h4>Dark Vision</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">Sneha</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/avax.svg" alt="" class="eth"> -->
+                            <h4>Game Changer</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">Raj</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- TOP CREATOR TABLE -->
+                    <div class="card white-bg-stat mt-3rem">
+                      <div class="card-header">
+                        <h4 class="card-title">Top Creators</h4>
+                      </div>
+                      <div class="card-body bs-0 mt-n4 nft-mint">
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/eth.svg" alt="" class="eth"> -->
+                            <h4>Padra Luca</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">200+ creations</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/sol.svg" alt="" class="eth"> -->
+                            <h4>Joe Marotta</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">150+ creations</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/avax.svg" alt="" class="eth"> -->
+                            <h4>Paul Harris</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">100+ creations</p>
+                          </div>
+                        </div>
+                        <div class="recent dfjb">
+                          <div class="chain d-flex">
+                            <!-- <img src="./icons/avax.svg" alt="" class="eth"> -->
+                            <h4>Chris Alto</h4>
+                          </div>
+                          <div class="count">
+                            <p class="mb-0">75+ creations</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

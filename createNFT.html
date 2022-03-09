@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!---- Website Information ---->
+    <title>Federal Multiverse</title>
+    <meta name="description" content="Federal Multiverse" />
+
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/code.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/newstyles.css" />
+  </head>
+
+  <body class="@@dashboard">
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div id="main-wrapper">
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="header-content">
+                <div class="header-left">
+                  <h2 class="mb-0">Federal Multiverse</h2>
+                  <div class="brand-logo">
+                    <a class="mini-logo" href="./"
+                      ><img src="./images/logoi.png" alt="" width="40"
+                    /></a>
+                  </div>
+                </div>
+                <div class="header-right">
+                  <!-- <div class="theme-switch"><i class="ri-sun-line"></i></div> -->
+                  <div class="search mr-4">
+                    <form action="#">
+                      <span><i class="ri-search-line"></i></span
+                      ><input type="text" placeholder="Search Here" />
+                    </form>
+                  </div>
+                  <h6 class="mr-1rem light-color">Hi, Praveen</h6>
+                  <div class="dropdown profile_log dropdown">
+                    <div
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      class=""
+                      aria-expanded="false"
+                    >
+                      <div class="user icon-menu active">
+                        <span
+                          ><img
+                            src="https://img.icons8.com/bubbles/50/000000/user.png"
+                        /></span>
+                      </div>
+                    </div>
+                    <div
+                      tabindex="-1"
+                      role="menu"
+                      aria-hidden="true"
+                      class="dropdown-menu dropdown-menu-right"
+                    >
+                      <div class="user-email">
+                        <div class="user">
+                          <span class="thumb">
+                            <img src="./images/profile/3.png" alt="" />
+                          </span>
+                          <div class="user-info">
+                            <h5>Praveen Thakur</h5>
+                            <span>praveen@gmail.com</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="dropdown-item" href="./profile.html">
+                        <span><i class="ri-user-line"></i></span>Profile
+                      </a>
+                      <a class="dropdown-item" href="./wallet.html">
+                        <span><i class="ri-wallet-line"></i></span>Wallet
+                      </a>
+                      <a class="dropdown-item" href="./settings-profile.html">
+                        <span><i class="ri-settings-3-line"></i></span>Settings
+                      </a>
+                      <a class="dropdown-item" href="./settings-activity.html">
+                        <span><i class="ri-time-line"></i></span>Activity
+                      </a>
+                      <a class="dropdown-item" href="./lock.html">
+                        <span><i class="ri-lock-line"></i></span>Lock
+                      </a>
+                      <a class="dropdown-item logout" href="./index.html">
+                        <i class="ri-logout-circle-line"></i>Logout
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="brand-logo">
+          <a class="full-logo" href="./"
+            ><img src="./images/logo-icon.png" alt="" width="40"
+          /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="./dashboard.html">
+                <span><i class="ri-layout-grid-fill"></i></span>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="./collection.html">
+                <span><i class="ri-star-line"></i></span>
+                <span class="nav-text">My Collections</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./createNFT.html">
+                <span><i class="ri-add-box-line"></i></span>
+
+                <span class="nav-text">Create NFT</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./marketplace.html">
+                <span><i class="ri-heart-line"></i></span>
+                <span class="nav-text">Marketplace</span></a
+              >
+            </li>
+
+            <li class="">
+              <a href="./profile.html">
+                <span><i class="ri-account-box-line"></i></span>
+                <span class="nav-text">Profile</span></a
+              >
+            </li>
+            <li class="">
+              <a href="./settings-profile.html">
+                <span><i class="ri-settings-3-line"></i></span>
+                <span class="nav-text">Settings</span></a
+              >
+            </li>
+            <li class="logout">
+              <a href="./index.html">
+                <span><i class="ri-logout-circle-line"></i></span>
+                <span class="nav-text">Signout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-body">
+        <div class="container">
+          <div class="page-title">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-6">
+                <div class="page-title-content">
+                  <h3>Create New Item</h3>
+                  <!-- <p class="mb-2">Welcome Federal Multiverse</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="df-jb">
+            <div class="card">
+              <div class="card-header pt-0">
+                <h4 class="card-title">User Profile</h4>
+              </div>
+              <div class="card-body">
+                <form action="#" class="form-create-nft">
+                  <div class="row">
+                    <div class="col-12 mb-3">
+                      <p class="form-label">Image, Video, Audio, or 3D Model</p>
+
+                      <div class="col-12 custom-file">
+                        <label class="btn" for="upload">
+                          <img
+                            src="https://img.icons8.com/pastel-glyph/200/000000/image--v2.png"
+                            id="blah"
+                          />
+                          <input
+                            class="isVisuallyHidden"
+                            id="upload"
+                            type="file"
+                            name="photo"
+                            onchange="readURL(this)"
+                          />
+                        </label>
+                        <!-- <img src="#" alt="#blah" id="blah" /> -->
+
+                        <!-- <input name="photo" type="file" class="" value=""> -->
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label">Name</label>
+                      <input
+                        name="fullName"
+                        type="text"
+                        class="form-control"
+                        value=""
+                        placeholder="Item name"
+                        id="name"
+                      />
+                    </div>
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">External Link</label>
+                      <p>
+                        <small>Please include the link of URL.</small>
+                      </p>
+                      <input
+                        name="externallink"
+                        type="text"
+                        class="form-control mt-0"
+                        value=""
+                        placeholder="https://yoursite.io/item/123"
+                        id="externallink"
+                      />
+                    </div>
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">Description</label>
+                      <p>
+                        <small
+                          >The description will be included on the item's detail
+                          page underneath its image. Markdown syntax is
+                          supported.</small
+                        >
+                      </p>
+                      <textarea
+                        name="desc"
+                        id="desc"
+                        rows="6"
+                        placeholder="Provide a detailed description of your item "
+                        class="w-100 form-control"
+                      ></textarea>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">Collection</label>
+                      <p>
+                        <small
+                          >This is the collection where your item will
+                          appear..</small
+                        >
+                      </p>
+                      <select
+                        name="collecion"
+                        id="collectible"
+                        class="form-control"
+                      >
+                        <option value="collectible">Select Collection</option>
+                        <option value="Ninja">Ninja</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 mt-4 border-bottom pb-4">
+                      <div class="dfjb">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/20/000000/external-list-start-up-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"
+                          />
+                          <div class="mx-2">
+                            <h6 class="mb-0">Properties</h6>
+                            <p class="mt-0 mb-0">
+                              Textual Traits that shows up as rectangls
+                            </p>
+                          </div>
+                        </div>
+                        <div class="icon-add">
+                          <img
+                            src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4 border-bottom pb-4">
+                      <div class="dfjb">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://img.icons8.com/ios-glyphs/20/000000/star--v1.png"
+                          />
+                          <div class="mx-2">
+                            <h6 class="mb-0">Levels</h6>
+                            <p class="mt-0 mb-0">
+                              Numercial traits that shows up as rectangls
+                            </p>
+                          </div>
+                        </div>
+                        <div class="icon-add">
+                          <img
+                            src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 border-bottom pb-4">
+                      <div class="dfjb">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://img.icons8.com/ios-filled/20/000000/bar-chart--v1.png"
+                          />
+                          <div class="mx-2">
+                            <h6 class="mb-0">Stats</h6>
+                            <p class="mt-0 mb-0">
+                              Numercial traits that just shows as a number
+                            </p>
+                          </div>
+                        </div>
+                        <div class="icon-add">
+                          <img
+                            src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 border-bottom pb-4">
+                      <div class="dfjb">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://img.icons8.com/external-bearicons-gradient-bearicons/20/000000/external-unlock-call-to-action-bearicons-gradient-bearicons.png"
+                          />
+                          <div class="mx-2">
+                            <h6 class="mb-0">Unlockable Content</h6>
+                            <p class="mt-0 mb-0">
+                              Include unlockable content that can only be
+                              revealed by the owner of the item.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="icon-add">
+                          <img
+                            src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4 border-bottom pb-4">
+                      <div class="dfjb">
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://img.icons8.com/emoji/20/000000/warning-emoji.png"
+                          />
+                          <div class="mx-2">
+                            <h6 class="mb-0">Sensitive content</h6>
+                            <p class="mt-0 mb-0">
+                              Set this item as explicit and sensitive content
+                            </p>
+                          </div>
+                        </div>
+                        <div class="icon-dd">
+                          <!-- <img src="https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/48/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png"/> -->
+                          <input type="checkbox" id="switch" /><label
+                            for="switch"
+                            >Toggle</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">Supply</label>
+                      <p>
+                        <small
+                          >The number of items that can be minted. No gas cost
+                          to you!
+                        </small>
+                      </p>
+                      <input
+                        name="supply"
+                        type="text"
+                        id="supply"
+                        class="form-control mt-0"
+                        value=""
+                        placeholder="1"
+                      />
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">Blockchain</label>
+                      <select
+                        name="collecion"
+                        id="blockchain"
+                        class="form-control"
+                      >
+                        <option value="Ethereum">
+                          <img src="./icons/eth.svg" alt="" class="cry-image" />
+                          Ethereum
+                        </option>
+                        <option value="solana">
+                          <img
+                            src="./icons/sol.svg"
+                            alt=""
+                            class="cry-image"
+                          />Solana
+                        </option>
+                        <option value="avalanche">
+                          <img
+                            src="./icons/avax.svg"
+                            alt=""
+                            class="cry-image"
+                          />Avalanche
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <label class="form-label mb-0">Freeze Metadata</label>
+                      <p>
+                        <small
+                          >Freezing your metadata will allow you to permanently
+                          lock and store all of this item's content in
+                          decentralized file storage.</small
+                        >
+                      </p>
+                      <input
+                        name="supply"
+                        type="text"
+                        class="form-control mt-0"
+                        value=""
+                        placeholder="To freeze your metadata, you must create your item first."
+                        disabled
+                      />
+                    </div>
+                    <div class="mt-4 pt-4">
+                      <button type="submit" class="btn btn-primary mr-2">
+                        Create
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-5" style="margin-left: 2rem">
+              <div class="card white-bg-stat mt-3rem">
+                <div class="card-header">
+                  <h4 class="card-title">Recommendations</h4>
+                </div>
+                <div class="card-body bs-0 mt-n4">
+                  <div class="recent dfjb">
+                    <div class="chain d-flex">
+                      <img src="./icons/eth.svg" alt="" class="eth" />
+                      <h4>Ethereum</h4>
+                    </div>
+                    <div class="count text-right">
+                      <p class="light mb-1">
+                        <small> Minting Cost :</small> <span>$ 0.01</span>
+                      </p>
+                      <p class="light mb-1">
+                        <small>Monthly Txn Volumne :</small>
+                        <span>3.5 B</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="recent dfjb">
+                    <div class="chain d-flex">
+                      <img src="./icons/sol.svg" alt="" class="eth" />
+                      <h4>Solana</h4>
+                    </div>
+                    <div class="count text-right">
+                      <p class="light mb-1">
+                        <small> Minting Cost :</small> <span>$ 0.01</span>
+                      </p>
+                      <p class="light mb-1">
+                        <small>Monthly Txn Volumne :</small>
+                        <span>3.5 B</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="recent dfjb">
+                    <div class="chain d-flex">
+                      <img src="./icons/avax.svg" alt="" class="eth" />
+                      <h4>Avalanche</h4>
+                    </div>
+                    <div class="count text-right">
+                      <p class="light mb-1">
+                        <small> Minting Cost :</small> <span>$ 0.01</span>
+                      </p>
+                      <p class="light mb-1">
+                        <small>Monthly Txn Volumne :</small>
+                        <span>3.5 B</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="grid-fulll">
+            <div class="col-md-12">
+              
+            </div>
+          </div> -->
+
+          <!-- POPUP TO REDIRECT -->
+          <div class="layer">
+            <div class="card">
+              <i class="ri-close-line"></i>
+
+              <div class="card-body">
+                <div class="card-img-top">
+                  <img src="./images/nft/hazy.png" alt="" />
+                </div>
+                <h5 class="card-title mt-2">Nft Minted Succesfully</h5>
+                <p class="card-text mt-2">
+                  You will be redirected to marketplace in seconds......
+                </p>
+                <a href="./marketplace.html" class="btn btn-primary"
+                  >Redirect Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="./code.js"></script> -->
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/scripts.js"></script>
+
+    <script>
+      const form = document.querySelector(".form-create-nft");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        document.querySelector(".layer").classList.add("on");
+        setTimeout(function () {
+          window.location.href = "./marketplace.html";
+        }, 3000);
+      });
+
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            $("#blah").attr("src", e.target.result).width(200).height(200);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>
